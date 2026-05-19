@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/config.css">
+    <script src="js/index.js" defer></script>
+    <title>Desafio - AceData - Exercício 1</title>
+</head>
+<body>
+    <section class="titulo">
+        <h1>Calculadora de Salário Líquido</h1>
+    </section>
+
+    <section class="calculadora">
+        <div>
+            <label for="qtd_horas_trabalhadas">Quantidade de horas trabalhadas:</label>
+            <input type="number" id="qtd_horas_trabalhadas" placeholder="Digite aqui...">
+        </div>
+        <div>
+            <label for="valor_hora_trabalhada">Valor da hora trabalhada:</label>
+            <input type="number" id="valor_hora_trabalhada" placeholder="Digite aqui...">
+        </div>
+        <div>
+            <label for="qtd_filhos_menores">Quantidade de filhos menores:</label>
+            <input type="number" id="qtd_filhos_menores" placeholder="Digite aqui...">
+        </div>
+        <p id="resultado"></p>
+        <button onclick="calcularSalarioLiquido()">Calcular Salário Líquido</button>
+    </section>
+    
+</body>
+</html>
