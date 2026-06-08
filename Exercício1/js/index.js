@@ -41,6 +41,18 @@ function calcularSalarioLiquido(){
 	let qtd_filhos_menores =
 		Number(document.getElementById("qtd_filhos_menores").value)
 
+	if (!Number.isInteger(qtd_filhos_menores)) {
+		document.getElementById("resultado").innerText = "Quantidade de filhos menores precisa ser um número inteiro"
+		return
+	}
+
+	if(qtd_horas_trabalhadas < 0) {
+		document.getElementById("resultado").innerText = "Horas trabalhadas não podem ser um número negativo"
+
+		return
+	}
+
+
 	salario_bruto = calcularSalarioBruto(
 		valor_hora_trabalhada,
 		qtd_horas_trabalhadas
