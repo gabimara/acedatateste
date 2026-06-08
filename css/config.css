@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.logoAce {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.25rem;
+    border: 0.7rem solid #004388;
+    border-radius: 30%;
+    width: 20rem;
+    padding: 3rem;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #004388;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    list-style: none;
+    gap: 1rem;
+}
+
+li a {
+    display: flex;
+    text-decoration: none;
+    color: #004388;
+    font-size: 1.5rem;
+    border: 0.2rem solid #004388;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+li a:hover {
+    background-color: #004388;
+    color: #fff;
+}
